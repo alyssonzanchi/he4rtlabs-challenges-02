@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    margin: auto;
+    background-color: #F6F7FA;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #9067c6;
+    color: white;
+}
+
+header img {
+    height: 100px;
+    width: 320px;
+}
+
+.actions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 2px solid #B4B5B8;
+    font-size: 18px;
+}
+
+.actions-content button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border: 1px solid #B4B5B8;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+input {
+    height: 45px;
+    width: 300px;
+    border: 1px solid #B4B5B8;
+    border-left: none;
+    font-size: 16px;
+}
+
+#value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #B4B5B8;
+    border-right: none;
+}
+
+.features-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-table-header {
+    display: flex;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.features-table {
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+.features-table:nth-last-child(1) {
+    margin-bottom: 20px;
+}
+
+th {
+    width: 218px;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+td {
+    width: 218px;
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9067c6;
+    width: 345px;
+    height: 150px;
+    margin: 20px 0px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.resume p {
+    margin-bottom: 5px;
+}
+
+.resume p:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.modal-add {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 50%;
+    padding: 30px;
+}
+
+.modal-add::backdrop {
+    background-color: rgb(0, 0, 0, .5);
+}
+
+.modal-add div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.modal-add .confirm {
+    margin-top: 20px;
+    justify-content: end;
+}
+
+#buttonConfirm {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border: none;
+    background-color: #9067c6;
+    cursor: pointer;
+}
+
+.delete-row-hidden {
+    display: none;
+}
+
+.delete-row {
+    display: flex;
+    width: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+.delete-row button {
+    width: 30px;
+    height: 30px;
+    background-color: #9067c6;
+    border: none;
+}
+
+.modal-add form {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.modal-add form label {
+    padding-top: 30px;
+}
+
+.modal-add form input {
+    margin-top: 10px;
+    padding: 10px;
+    width: auto;
+    border: 1px solid;
+}
+
+.modal-import {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 30%;
+    padding: 30px;
+}
+
+.modal-import::backdrop {
+    background-color: rgb(0, 0, 0, .5);
+}
+
+.modal-import div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-import input {
+    margin-top: 30px;
+    width: auto;
+    border: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #9067c6;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    width: 236px;
+    height: 24px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

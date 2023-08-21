@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planilha Freelancer</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.png">
+      <h1>Planilha Freelancer</h1>
+    </header>
+    <main>
+      <div class="actions-content">
+        <div>
+          <button id="add">
+            <i class="fa-solid fa-plus" style="color: #9067c6;"></i>
+          </button>
+          <button id="delete">
+            <i class="fa-solid fa-trash-can" style="color: #9067c6;"></i>
+          </button>
+          <button id="import">
+            <i class="fa-solid fa-arrow-up" style="color: #9067c6;"></i>
+          </button>
+          <button id="export">
+            <i class="fa-solid fa-arrow-down" style="color: #9067c6;"></i>
+          </button>
+          <a href="#" id="download"></a>
+        </div>
+
+        <div class="flexbox">
+          <div id="value">
+            <span>R$</span>
+          </div>
+          <input type="number" id="valorHora" placeholder="Valor Hora">
+        </div>
+      </div>
+
+      <div class="features-content">
+        <table>
+          <thead>
+            <tr class="features-table-header">
+              <th>FUNCIONALIDADE</th>
+              <th>HORAS DEV</th>
+              <th>HORAS TESTE</th>
+              <th>VALOR</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+
+        <div class="resume">
+          <p>Total de Funcionalidades: <span id="totalFeatures"></span></p>
+          <p>Total Horas de Desenvolvimento: <span id="totalHorasDev"></span>h</p>
+          <p>Total Horas de Teste: <span id="totalHorasTest"></span>h</p>
+          <p>Valor Total: R$ <span id="valorTotal"></span></p>
+        </div>
+      </div>
+
+      <dialog class="modal-add">
+        <div>
+          <h2>Insira Suas Features</h2>
+          <button class="close" id="close-add-features">
+            <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+          </button>
+        </div>
+
+        <form id="form-feature">
+          <label>Funcionalidade:</label>
+          <input id="feature" type="text">
+
+          <label>Horas de Desenvolvimento:</label>
+          <input id="horasDev" type="number">
+
+          <label>Horas de Teste:</label>
+          <input id="horasTest" type="number">
+
+          <div class="confirm">
+            <button type="button" id="buttonConfirm">
+              <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+            </button>
+          </div>
+        </form>
+      </dialog>
+
+      <dialog class="modal-import">
+        <div>
+          <h2>Insira Suas Features</h2>
+          <button class="close" id="close-import-features">
+            <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+          </button>
+        </div>
+
+        <input type="file" id="inputImport" accept=".json" />
+      </dialog>
+    </main>
+    <footer>
+      <div class="icons">
+        <a href="https://twitter.com/AlyZanchi"><img src="./assets/twitter.svg" alt="twitter"></a>
+        <a href="https://www.twitch.tv/alyzn"><img src="./assets/twitch.svg" alt="twitch"></a>
+        <a href="https://www.instagram.com/alyssonzanchi/"><img src="./assets/instagram.svg" alt="instagram"></a>
+        <a href="https://www.linkedin.com/in/alysson-zanchi-123b80203/"><img src="./assets/linkedin.svg" alt="linkedin"></a>
+        <a href="https://github.com/alyssonzanchi"><img src="./assets/github.svg" alt="github"></a>
+      </div>
+      <p>Developed by Alysson Zanchi</p>
+    </footer>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="https://kit.fontawesome.com/fa33359111.js" crossorigin="anonymous"></script>
+</html>
