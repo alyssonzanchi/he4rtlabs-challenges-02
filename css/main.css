@@ -53,6 +53,7 @@ input {
     border: 1px solid #B4B5B8;
     border-left: none;
     font-size: 16px;
+    outline: 0;
 }
 
 #value {
@@ -127,7 +128,7 @@ td {
     top: 50%;
     transform: translate(-50%, -50%);
     border: none;
-    width: 50%;
+    width: 20%;
     padding: 30px;
 }
 
@@ -153,7 +154,7 @@ td {
     justify-content: end;
 }
 
-#buttonConfirm {
+.buttonConfirm {
     width: 40px;
     height: 40px;
     margin: 0;
@@ -179,6 +180,7 @@ td {
     height: 30px;
     background-color: #9067c6;
     border: none;
+    cursor: pointer;
 }
 
 .modal-add form {
@@ -205,7 +207,7 @@ td {
     top: 50%;
     transform: translate(-50%, -50%);
     border: none;
-    width: 30%;
+    width: 20%;
     padding: 30px;
 }
 
@@ -218,10 +220,23 @@ td {
     justify-content: space-between;
 }
 
+.modal-import div:nth-last-child(1) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
 .modal-import input {
     margin-top: 30px;
     width: auto;
     border: none;
+}
+
+#buttonConfirmImport {
+    width: 100px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 footer {
